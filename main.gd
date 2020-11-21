@@ -25,7 +25,7 @@ func _update_info():
 		l.text += "  " + OWO.get_sensation_name(k) + " = "+ str(OWO.Sensations.values()[k]) + "\n";
 		
 	l = $MusclesLabel;
-	l.text = "Sensations:\n";
+	l.text = "Muscles:\n";
 	for k in range(0, num_muscles):
 		if k == selected_muscle: l.text += "> ";
 		l.text += "  " + OWO.get_muscle_name(k) + " = "+ str(OWO.Muscles.values()[k]) + "\n";
